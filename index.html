@@ -16,32 +16,32 @@
             <p id="resultado"></p>
             <table>
                 <tr>
-                    <td><button class="botao-estilo botaoC">C</button></td>
-                    <td><button class="botao-estilo botaoCE">CE</button></td>
-                    <td><button class="botao-estilo botaoOperadorDivisao">/</button></td>
-                    <td><button class="botao-estilo botaoOperadorMultiplicacao">x</button></td>
+                    <td><button class="botao-estilo" onclick="clean()">C</button></td>
+                    <td><button class="botao-estilo" onclick="cleanChar()">CE</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('/')">/</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('*')">x</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-estilo botaoNumero9">9</button></td>
-                    <td><button class="botao-estilo botaoNumero8">8</button></td>
-                    <td><button class="botao-estilo botaoNumero7">7</button></td>
-                    <td><button class="botao-estilo botaoOperadorAdicao">+</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('9')">9</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('8')">8</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('7')">7</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-estilo botaoNumero6">6</button></td>
-                    <td><button class="botao-estilo botaoNumero5">5</button></td>
-                    <td><button class="botao-estilo botaoNumero4">4</button></td>
-                    <td><button class="botao-estilo botaoOperadorSubtracao">-</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('6')">6</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('5')">5</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('4')">4</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button class="botao-estilo botaoNumero3">3</button></td>
-                    <td><button class="botao-estilo botaoNumero2">2</button></td>
-                    <td><button class="botao-estilo botaoNumero1">1</button></td>
-                    <td rowspan="2"><button class="botao-estilo botao-igual">=</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('3')">3</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('2')">2</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('1')">1</button></td>
+                    <td rowspan="2"><button class="botao-estilo botao-igual" onclick="calcular()">=</button></td>
                 </tr>
                 <tr>
-                    <td colspan="2"><button class="botao-estilo botaoNumero0 botao-zero">0</button></td>
-                    <td><button class="botao-estilo botaoPonto">.</button></td>
+                    <td colspan="2"><button class="botao-estilo botao-zero" onclick="inserir('0')">0</button></td>
+                    <td><button class="botao-estilo" onclick="inserir('.')">.</button></td>
                 </tr>
             </table>
         </div>
